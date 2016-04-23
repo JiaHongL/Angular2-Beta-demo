@@ -12,9 +12,9 @@ import {SearchComponent} from './app.searchcomponent';
   directives: [ROUTER_DIRECTIVES]
 })
 @RouteConfig([
-	{path:"Login", component:LoginComponent,name:"Login"},
-  {path:"Search/:id", component:SearchComponent,name:"Search"},
-  {path:"*path", redirectTo:['Login'] }
+	{path:"/Login", component:LoginComponent,name:"Login"},
+  {path:"/Search/:id", component:SearchComponent,name:"Search"},
+  {path:"/*path", redirectTo:['Login'] }
 ])
 export class AppComponent { }
 

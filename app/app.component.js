@@ -37,9 +37,9 @@ System.register(['angular2/core', 'angular2/router', './app.logincomponent', './
                         directives: [router_1.ROUTER_DIRECTIVES]
                     }),
                     router_1.RouteConfig([
-                        { path: "Login", component: app_logincomponent_1.LoginComponent, name: "Login" },
-                        { path: "Search/:id", component: app_searchcomponent_1.SearchComponent, name: "Search" },
-                        { path: "*path", redirectTo: ['Login'] }
+                        { path: "/Login", component: app_logincomponent_1.LoginComponent, name: "Login" },
+                        { path: "/Search/:id", component: app_searchcomponent_1.SearchComponent, name: "Search" },
+                        { path: "/*path", redirectTo: ['Login'] }
                     ]), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
