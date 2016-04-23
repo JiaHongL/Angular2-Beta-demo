@@ -10,7 +10,7 @@ import * as _ from "lodash";
   name: 'FuzzySearch'/*,
   pure: false,Allen Copeland*/
 })
-export class SortByNamePipe {
+export class FuzzySearchPipe {
  transform (value, [queryString]) {
         if (value==null) {
             return null;
@@ -42,7 +42,7 @@ export class SortByNamePipe {
         }
 	`],
   directives:[FORM_DIRECTIVES],
-  pipes: [SortByNamePipe],
+  pipes: [FuzzySearchPipe],
   properties:["pass_data","search_data"],
   template: `
      <div class="list">
