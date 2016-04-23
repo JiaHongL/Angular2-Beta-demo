@@ -44,6 +44,9 @@ interface is_msg_m {
         .form-signin{
             padding-top:0px;
         }
+        .form-signin input{
+             text-align: center;
+        }
         
 	`],
   directives:[FORM_DIRECTIVES,modal_Component],
