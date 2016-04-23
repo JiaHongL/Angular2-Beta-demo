@@ -48,7 +48,6 @@ System.register(['angular2/core', 'angular2/common', './app.listcomponent', './a
                 SearchComponent.prototype.Search = function () {
                     var _this = this;
                     this.http.get('app/list500.json').map(function (res) { return res.json(); }).subscribe(function (res) { return _this.list_data = res; });
-                    setTimeout(function () { console.log(this.pass_data); }, 5000);
                 };
                 SearchComponent.prototype.Loading_data = function (d) {
                     var _this = this;

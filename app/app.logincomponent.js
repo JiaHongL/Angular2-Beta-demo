@@ -41,7 +41,6 @@ System.register(['angular2/core', 'angular2/common', './app.modalcomponent', 'an
                     this.is_show_status = { status: true };
                 }
                 LoginComponent.prototype.onSubmit = function (d) {
-                    console.log(d);
                     var is_login = true;
                     if (d.user != 'Jhl') {
                         this.msg_status = { text: '請輸入正確帳號 (Jhl)' };

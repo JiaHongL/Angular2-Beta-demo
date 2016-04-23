@@ -64,7 +64,6 @@ export class SearchComponent {
     }  
     Search(){
         this.http.get('app/list500.json').map((res: Response) => res.json()).subscribe(res => this.list_data = res );
-         setTimeout(function(){console.log(this.pass_data)}, 5000);
     }
     Loading_data(d:string){
         if(d=='1000'){

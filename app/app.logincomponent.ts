@@ -59,7 +59,6 @@ export class LoginComponent {
        this.is_show_status = {status:true};
     }
     onSubmit(d) {
-        console.log(d);
         var is_login:boolean = true;
         if(d.user!='Jhl'){
             this.msg_status = {text:'請輸入正確帳號 (Jhl)'};
