@@ -22,9 +22,27 @@ interface is_msg_m {
             box-shadow:0 2px 5px 0;
             width:100%;
             height:100%;
+            text-align:center;
+            padding-top:150px;
         }
         div.content{
-            padding-top:10%;
+            width:350px;
+            height:390px;
+            background-color:#f7f7f7;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -220px 0 0 -200px;
+            padding-top:30px;
+            border-radius: 10px;
+        }
+        .content img{
+            width:150px;
+            height:150px;
+        }
+        .form-signin{
+            padding-top:0px;
         }
         
 	`],
@@ -32,6 +50,7 @@ interface is_msg_m {
   template: `
     <div class="main">
         <div class="content">
+            <img src="./images/angular.png" />
             <form class="form-signin"  #f="ngForm"  (ngSubmit)="onSubmit(f.value)">
                 <h2 class="form-signin-heading"></h2>
                 <label  class="sr-only">User</label>
